@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+/*=============================================================================
+ |       Author:  Eoghan Byrne
+ |  Student No.:  C17315336
+ |        Email:  c17315336@mytudublin.ie
+ |
+ |       Module:  Rich Web Applications Technology
+ |          Lab:  1
+ |      Problem:  3
+ |     Due Date:  13th Oct 2020 @ 23:59
+ *===========================================================================*/
+-->
+
+<html>
+    <head>
+        <title>Lab 1 - Problem 3</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </head>
+
+    <body>
+        <h1>Sticky Notes</h1>
+        <ul>
+            <li><b>Add</b> note by using the input section below</li>
+            <li><b>Edit</b> note by shift + left clicking a note</li>
+            <li><b>Delete</b> note by double clicking a note</li>
+        </ul>
+        
+        <form>Input your note here:<br>
+            <textarea id="newItemInput" rows="5" cols="50"></textarea>
+            <select id="colour" name="colours">
+                <option value="yellow">Yellow</option>
+                <option value="red">Pink/Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+            </select>
+            <input type="button" onclick="addItem()" value="Submit">
+        </form>
+
+        <hr>
+        
+        <div class="container-grid" id="myStick">
+            <div class="yellow sticky">Note 1
+Hello World</div>
+            <div class="red sticky">Note 2</div>
+            <div class="blue sticky">Note 3</div>
+            <div class="green sticky">Note 4</div>
+            <div class="orange sticky">Note 5</div>
+        </div>
+        
+        <div id="editor">
+            <hr>
+            <textarea id="ta1" name="ta1" rows="5" cols="50"></textarea><br />
+            <input name="submit" id="submit" type="button" value="Edit Note" onclick="doEdit()" />
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

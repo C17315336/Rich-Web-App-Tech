@@ -1,0 +1,7 @@
+* {
+    font-family: "Open Sans";
+}
+
+ul li:nth-child(3n) {
+    color: red;
+}

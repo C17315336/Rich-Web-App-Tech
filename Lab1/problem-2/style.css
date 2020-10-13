@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.column {
+    text-align: center;
+    border: 1px solid;
+    flex-grow: 0.25;
+}
+
+@media screen and (max-width: 720px) {
+    .column {
+        width: calc(50% - 2px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .column {
+        width: calc(100% - 2px)
+    }
+}

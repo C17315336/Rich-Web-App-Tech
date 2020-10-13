@@ -1,0 +1,56 @@
+*{
+    font-family: "Open Sans";
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 150px;
+}
+
+div#editor {
+    display: none;
+}
+
+input {
+    vertical-align: top;
+}
+
+select {
+    vertical-align: top;
+}
+
+div {
+    padding: 5px;
+    white-space: pre-wrap;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    overflow: auto;
+}
+
+div:first-line{
+    text-align: center;
+}
+
+.yellow {
+    background-color: #ffffba;
+}
+
+.red {
+    background-color: #ffb3ba;
+}
+
+.blue {
+    background-color: #bae1ff;
+
+}
+
+.green {
+    background-color: #baffc9;
+}
+
+.orange {
+    background-color: #ffdfba;
+}

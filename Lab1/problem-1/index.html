@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+/*=============================================================================
+ |       Author:  Eoghan Byrne
+ |  Student No.:  C17315336
+ |        Email:  c17315336@mytudublin.ie
+ |
+ |       Module:  Rich Web Applications Technology
+ |          Lab:  1
+ |      Problem:  1
+ |     Due Date:  13th Oct 2020 @ 23:59
+ *===========================================================================*/
+-->
+
+<html>
+    <head>
+        <title>Lab 1 - Problem 1</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </head>
+
+    <body>
+        <h1>List Display - Insertion</h1>
+        <form onsubmit="return false">Input New Item Here (Note it can not be blank):<br>
+            <input type="text" id="newItemInput" onKeyDown="if(event.keyCode==13) addItem();">
+            <input type="button" onclick="addItem()" value="Insert">
+        </form>
+        <hr>
+        <ul id="myList">
+            <li>Test 1</li>
+            <li>Test 2</li>
+            <li>Test 3</li>
+            <li>Test 4</li>
+        </ul>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
